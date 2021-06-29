@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #0f1626;
+    --text-color: rgb(255, 255, 255);
+}
+
 html{
     font-size: 10px;
 }
@@ -48,12 +53,14 @@ body {
 .intro h1 {
     font-weight: 900;
     font-size: 6.3rem;
-    color: #000;
+    /* color: #000; */
+    color: var(--text-color);
     margin-bottom: 3rem;
     line-height: 1;
 }
 .intro p {
-    color: #000;
+    /* color: #000; */
+    color: var(--text-color);
     line-height: 2;
     margin-top: 2rem;
     font-weight: 400;
