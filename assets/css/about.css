@@ -2,10 +2,16 @@
     font-family: 'Poppins', sans-serif !important;
 }
 
+:root {
+    --primary-color: #0f1626;
+    --text-color: rgb(255, 255, 255);
+}
+
 #about-section{
     background: url(https://www.glbitm.org/Uploads/image/peeic-18oct19-glbitm1-sm.jpg) no-repeat left; /*'../img/about-img.jpg'*/
     background-size: 55%;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
+    background-color: var(--primary-color);
     overflow: hidden;
     padding: 80px 0;
 }
