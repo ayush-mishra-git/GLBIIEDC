@@ -6,7 +6,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home | GLBIIEDC</title>
+    <title>Home | NOVUS</title>
 
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -15,9 +15,12 @@
 
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/about.css">
+    <!-- <link rel="stylesheet" href="assets/css/about.css"> -->
     <link rel="stylesheet" href="assets/css/landing.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/aboutus.css" />
+    <link rel="stylesheet" href="assets/css/respAbout.css" />
+    <link rel="stylesheet" href="assets/css/event-section.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -41,19 +44,19 @@
                 <div class="header-logo"><a href="index.html"><img
                             src="https://tse2.mm.bing.net/th?id=OIP.YQ634-f1UMhPXFRcFnlBFAAAAA&pid=Api&P=0&w=300&h=300"
                             alt="logo"></a></div>
-                <a href="index.html" class="logo">GLBIIEDC</a>
+                <a href="index.html" class="logo">NOVUS</a>
                 <ul class="nav-list navbar-center">
                     <li>
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li>
-                        <a href="index.html#about-section" class="nav-link">About Us</a>
+                        <a href="index.html#sectionPart" class="nav-link">About Us</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Events</a>
+                        <a href="events.html" class="nav-link">Events</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Our Team</a>
+                        <a href="team.html" class="nav-link">Our Team</a>
                     </li>
                     <li>
                         <a href="#" class="nav-link">Initiatives</a>
@@ -80,9 +83,9 @@
     <!-- Landing Page  Section-->
     <section class="landing-page SocialLinks">
         <div class="intro" data-aos="fade-up" id="TextColor">
-            <h1 class="text-white">GLBIIEDC </h1>
+            <h1 class="text-white">NOVUS </h1>
             <h3 class="text-white">Student Club</h3>
-            <p class="text-white">"Transforming Young Minds into Future Entrepreneurs"</p>
+            <p class="spanF">"Transforming Young Minds into Future Entrepreneurs"</p>
             <!-- <a href="https://bit.ly/3itTKO8" class="landing-btn">Join Us</a>-->
         </div>
         <div class="social-links list-unstyled d-flex flex-column pos-setter">
@@ -109,10 +112,34 @@
     </section>
 
     <!-- About Us Section-->
-    <div id="about-section">
+    <section class="sectionPart" id="sectionPart">
+        <h2 class="heading">About Us</h2>
+        <span class="spanF" style="padding: 19px 0 10px 0">Description Of Club</span>
+        <hr class="separator">
+
+        <div class="about-Container" data-aos="fade-up">
+            <div class="para">
+                <p>
+                    E-Cell DTU, for the past 12 years has been advocating the spirit of
+                    being a ‘CREATOR’ by providing the students the right guidance and
+                    mentorship from venture capitalists, angel investors, and top
+                    industrialists and striving to create an entrepreneurial ecosystem.
+                    We attempt to foster new values amongst young individuals to make
+                    them an exemplary engineer imbibed with the idea of productive,
+                    innovative and independent thinking. We aim to create a 'CHANGE'
+                    with out of the box ideas and training individuals to make them the
+                    creators of this change.
+                </p>
+            </div>
+            <div class="layer">
+                <div class="textAboutUs">About Us</div>
+            </div>
+        </div>
+    </section>
+    <!-- <div id="about-section">
         <div class="inner-container" data-aos="fade-left">
             <h1 class="pb-0">About Us</h1>
-            <hr>
+            <hr class="separator">
             <p class="text">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by injected
@@ -121,11 +148,14 @@
             </p>
             <a href="#" id="about-btn">Learn More</a>
         </div>
-    </div>
+    </div> -->
 
     <!-- What we do?  Section-->
     <section class="what-we-do">
-        <div class="do-heading" data-aos="fade-up" data-aos-duration="400">What We Do?</div>
+        <div class="TextWrapper">
+            <div class="do-heading" data-aos="fade-up" data-aos-duration="400">What We Do?</div>
+            <hr class="separator">
+        </div>
         <div class="do-cards" data-aos="zoom-in" data-aos-duration="500">
             <div class="do-card">
                 <img class="do-img" style="height: 220px;"
@@ -170,41 +200,44 @@
         </div>
     </section>
 
-    <!--Meet out Team! Section-->
-    <!-- <section class="meet-team">
-        <div class="meet-info">
-            <h1 class="meet-name">Meet our Team!</h1>
-            <p class="meet-detail">We have dynamic and amazing team which will inspire you and motivate you to be productive. They make <strong>INNOVO INFINITY</strong> a better platform to learn. </p>
-            <a id="meet-btn" href="/assets/css/team.css">Our Team</a>    
-        </div>
-        <div class="img">
-            <img class="meet-img" src="/assets/img/Meet-Team/meet-img.svg" alt="">
-        </div>    
-    </section> -->
-
-    <!-- <section id="meet-section">
-        <div class="meet-container" data-aos="fade-up">
-            <h1>Meet Our Team!</h1>
-            <p class="text">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by injected
-                humour, or randomised words which don't look even slightly believable.
-            </p>
-            <a href="assets/html/team.html" id="meet-btn">Our Team</a>
-        </div>
-    </section> -->
-    <section id="gallery" class="pb-2">
-        <div class="do-heading" data-aos="fade-up" data-aos-duration="400">Gallery</div>
+    <div class="event-text">
+        <h1 class="do-heading" data-aos="fade-up" data-aos-duration="400">Events</h1>
+        <hr class="separator">
+    </div>
+    <section class="event-container">
         <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="2000">
-                    <img src="https://source.unsplash.com/1600x500/?nature,water" class="d-block w-100" alt="...">
+                <div class="carousel-item active" data-interval="10000">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Special title treatment</h3>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item" data-interval="2000">
-                    <img src="https://source.unsplash.com/1600x500/?nature,water" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://source.unsplash.com/1600x500/?nature,water" class="d-block w-100" alt="...">
+                <div class="carousel-item" data-interval="10000">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Special title treatment</h3>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">

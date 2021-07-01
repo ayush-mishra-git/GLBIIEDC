@@ -283,6 +283,16 @@ hr {
 
 /*What we Do */
 
+.separator {
+    width: 200px;
+	height: 5px;
+    margin-bottom: 2rem;
+    border: none;
+	background: #b92b27;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1565C0, #b92b27);
+}
+
 .what-we-do {
     width: 100%;
     padding-bottom: 3rem;
@@ -292,6 +302,14 @@ hr {
     /* background-color: #F6F7FA; */
     background-color: var(--primary-color);
 }
+
+.TextWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .do-heading {
     width: 100%;
     text-align: center;
@@ -308,15 +326,58 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
 }
-.do-card {
+.do-card-upcoming{
     display: flex;
-    width: 25%;
+    width: 50%;
     flex-direction: column;
     margin: 3rem 3rem;
     padding: 3rem 2rem;
     border: 3px solid #f6f7fa;
-    border-radius: 15px;
-    background-color: #fff;
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    transition: all 200ms ease;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+.do-card-upcoming:hover{
+    box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+    transform: translate(0px, -10px);
+}
+.do-card-upcoming.do-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+.do-card-upcoming .do-name {
+    color: var(--text-color);
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: left;
+    text-decoration: none;
+}
+.do-card-upcoming .do-detail {
+    color: rgb(248, 248, 255);
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    text-align: left;
+}
+.do-card {
+    
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    margin: 3rem 3rem;
+    padding: 3rem 2rem;
+    border: 3px solid #f6f7fa;
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
     transition: all 200ms ease;
     color: #333;
     text-decoration: none;
@@ -333,6 +394,7 @@ hr {
     max-width: 100%;
 }
 .do-card .do-name {
+    color: var(--text-color);
     font-size: 3.2rem;
     line-height: 3.6rem;
     font-weight: 700;
@@ -341,7 +403,7 @@ hr {
     text-decoration: none;
 }
 .do-card .do-detail {
-    color: #666;
+    color: rgb(248, 248, 255);
     font-size: 1.7rem;
     line-height: 2.8rem;
     font-weight: 400;
@@ -423,6 +485,10 @@ hr {
     .meet-container{
         padding: 60px;
         background-color: #fff;
+    }
+
+    .do-card-upcoming {
+        width: 70%;
     }
 }
 
